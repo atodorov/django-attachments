@@ -78,3 +78,7 @@ TEMPLATES = [
         },
     }
 ]
+
+# Prevent Django 6.1 and above from auto-generating migrations to upgrade
+# the testapp's existing AutoField primary keys.
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
